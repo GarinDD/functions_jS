@@ -66,9 +66,9 @@ let fruits = ["Apple","Orange","Pear"];
 fruits.pop()
 
 function printArr(arr){
-    arr.forEach(item) => {
+    arr.forEach((item) => {
         console.log(item)
-    }
+    })
 }
 
 
@@ -88,7 +88,10 @@ printArr(arr)
 
 let arr2 = [1,2,3,4]
 
-let arr3= arr2.map(item) => {
-    item = item * 2
-    return item
-}
+let arr3 = arr2.map((item) => item * 2)
+
+arr2.forEach((item,index,arr) => {
+    arr[index] = item * 2
+})
+
+printArr(arr2)
