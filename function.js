@@ -86,7 +86,7 @@ let arr = fruits.slice(2,fruits.length)
 
 printArr(arr)
 
-let arr2 = [1,2,3,4]
+let arr2 = [3,7,2,4]
 
 let arr3 = arr2.map((item) => item * 2)
 
@@ -94,4 +94,10 @@ arr2.forEach((item,index,arr) => {
     arr[index] = item * 2
 })
 
+// printArr(arr2)
+
+arr2.sort((a,b) => a - b)
 printArr(arr2)
+
+// a - b  => from the lowest to the highest
+// b - a => from the highest to the lowest
