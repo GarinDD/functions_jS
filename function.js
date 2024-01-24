@@ -54,9 +54,26 @@
 
 //  sayHi(mult,myFunc)
 
-let a = 3
-let mult = (x, y = 6) => {
-a = x * 2 + y
-    return a
-}
-console.log(mult(a))
+// let a = 3
+// let mult = (x, y = 6) => {
+// a = x * 2 + y
+//     return a
+// }
+// console.log(mult(a))
+
+let fruits = ["Apple","Orange","Pear"];
+
+fruits.pop()
+
+function printArr(arr){
+    arr.forEach(item) => {
+     console.log(item)
+}}
+
+
+fruits.push('Pear');
+
+fruits.splice(1,1,"Pomegrenade",)
+
+console.log(fruits.pop())
+
