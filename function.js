@@ -19,7 +19,7 @@ function hi(name, text="Привет") {
     counter++;
     alert(name+ ", " +text)
 }
-function showHiCount() {
+ function showHiCount() { //declaration function can be used before it was created
     alert("Я поприветствовал " + counter + " человек")
 }
 hi("Вася")
@@ -39,15 +39,15 @@ function myFunc(){
     return 2 * 2
 }
 
-
-
-
-
- const sayHi = function(funcOne, funcTwo){ //this function can't be used earlier, because it's a variable **
-    console.log(funcOne(3))
-    console.log(funcTwo)
+ const sayHi = function(callbackOne, callbackTwo){ // this function can't be used earlier, because it's a variable 
+ //** expression function  be used before it was created //
+    console.log(callbackOne(3))
+    console.log(callbackTwo())
 // 
  }
  let b = mult(a)
+
+//  mult = callbackOne
+//  myFunc = callbackTwo
 
  sayHi(mult,myFunc)
