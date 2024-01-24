@@ -39,10 +39,15 @@ function myFunc(){
     return 2 * 2
 }
 
-let b = mult(a)
 
-console.log(b)
 
-// const sayHi = function(){ this function can't be used earlier, because it's a variable **
 
-// }
+
+ const sayHi = function(funcOne, funcTwo){ //this function can't be used earlier, because it's a variable **
+    console.log(funcOne(3))
+    console.log(funcTwo)
+// 
+ }
+ let b = mult(a)
+
+ sayHi(mult,myFunc)
