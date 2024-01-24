@@ -67,13 +67,28 @@ fruits.pop()
 
 function printArr(arr){
     arr.forEach(item) => {
-     console.log(item)
-}}
+        console.log(item)
+    }
+}
 
 
 fruits.push('Pear');
 
-fruits.splice(1,1,"Pomegrenade",)
+fruits.splice(1,1,"Pomegrenade","Banana")
+
+printArr(fruits)
 
 console.log(fruits.pop())
 
+console.log(typeof fruits)
+
+let arr = fruits.slice(2,fruits.length)
+
+printArr(arr)
+
+let arr2 = [1,2,3,4]
+
+let arr3= arr2.map(item) => {
+    item = item * 2
+    return item
+}
